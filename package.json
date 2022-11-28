@@ -5,15 +5,18 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack",
-    "dev": "webpack-dev-serve --mode=development",
-    "create":"node src/scripts/create.js"
+    "dev": "webpack serve --mode=development",
+    "create": "node src/scripts/create.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.20.2",
+    "@babel/preset-env": "^7.20.2",
+    "babel-loader": "^9.1.0",
     "clean-webpack-plugin": "^4.0.0",
-    "css-loader": "^6.7.2",
+    "css-loader": "^5.0.0",
     "css-minimizer-webpack-plugin": "^4.2.2",
     "file-loader": "^6.2.0",
     "mini-css-extract-plugin": "^2.7.0",
@@ -21,7 +24,7 @@
     "postcss-loader": "^7.0.1",
     "postcss-preset-env": "^7.8.3",
     "sass": "^1.56.1",
-    "sass-loader": "^13.2.0",
+    "sass-loader": "^10.0.3",
     "webpack": "^5.1.0",
     "webpack-cli": "^5.0.0",
     "webpack-dev-server": "^4.11.1"
